@@ -8,7 +8,8 @@ import { SnackBarService } from './services/snack-bar.service';
   imports: [
     CommonModule
   ],
-  declarations: [
+  declarations: [],
+  providers: [
     WindowService,
     SnackBarService
   ]
