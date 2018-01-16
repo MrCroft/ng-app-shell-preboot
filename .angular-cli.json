@@ -55,6 +55,33 @@
       },
       "serviceWorker": true,
       "platform": "server"
+    },
+    {
+      "root": "src",
+      "outDir": "dist/shell",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.shell.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.shell.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "_styles/material-theme.scss",
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "serviceWorker": true,
+      "platform": "server",
+      "name": "shell"
     }
   ],
   "e2e": {
