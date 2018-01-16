@@ -1,4 +1,5 @@
 //@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import 'components/index';
 
 $pd-black: (
     50 : #e0e0e0,
@@ -129,38 +130,3 @@ $theme: mat-dark-theme($primary, $accent, $warn);
   min-height: 100vh;
 }
 
-
-/**
- * SNACKBAR
- */
-.mat-simple-snackbar-action { color: #fff; }
-
-.snackbar-error {
-  animation: error 1200ms 2;
-}
-
-@keyframes error {
-  0% { background: #323232; }
-  50% { background: #ff0056; }
-  100% { background: #323232; }
-}
-
-.snackbar-success {
-  animation: success 1200ms 2;
-}
-
-@keyframes success {
-  0% { background: #323232; }
-  50% { background: #12c085; }
-  100% { background: #323232; }
-}
-
-.snackbar-info {
-  animation: info 1200ms 2;
-}
-
-@keyframes info {
-  0% { background: #323232; }
-  50% { background: #0b5394; }
-  100% { background: #323232; }
-}
