@@ -1,0 +1,48 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<mat-sidenav-container class="example-container" *ngIf="true">
+  <mat-sidenav #mainMenu mode="over" opened="false" position="end"
+    [fixedInViewport]="true" [fixedTopGap]="0" [fixedBottomGap]="0">
+
+    <mat-nav-list id="pd--main_nav">
+      <a mat-list-item [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon matListIcon>home</mat-icon> <span>Home</span>
+      </a>
+      <a mat-list-item [routerLink]="['/about']" routerLinkActive="active">
+        <mat-icon matListIcon>description</mat-icon> <span>About</span>
+      </a>
+      <a mat-list-item [routerLink]="['/page-not-found']" routerLinkActive="active">
+        <mat-icon matListIcon>report_problem</mat-icon> <span>404</span>
+      </a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <!-- MAT-TOOLBAR could also be here -->
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" id="pd--main_toolbar">
+      <mat-toolbar-row>
+        <div class="left-nav">
+          <!-- <h2><a [routerLink]="['/']">Porndoe Premium</a></h2> -->
+          <a [routerLink]="['/']" class="btn-brand" mat-button>PornDoe Premium</a>
+        </div>
+
+        <div class="right-nav">
+          <a [routerLink]="['/about']" mat-button>About</a>
+          <a [routerLink]="['/page-not-found']" mat-button>404</a>
+        </div>
+        <button mat-icon-button class="btn-menu" (click)="mainMenu.opened ? mainMenu.close() : mainMenu.open()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <div class="container">
+
+      <router-outlet></router-outlet>
+
+      <footer>
+        Copyright 2018 &copy; MrCroft
+      </footer>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
