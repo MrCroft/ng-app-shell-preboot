@@ -14,8 +14,9 @@
     "build:ssr-dev": "ng build --prod --env=dev --extract-css && ng build --prod --env=dev --app 1 --extract-css --output-hashing=false && cpx ./server.ts ./dist",
     "build:ssr-lo": "ng build --prod --env=local --extract-css && ng build --prod --env=local --app 1 --extract-css --output-hashing=false && cpx ./server.ts ./dist",
     "build:ssr-test": "ng build --prod --env=test --extract-css && ng build --prod --env=test --app 1 --extract-css --output-hashing=false && cpx ./server.ts ./dist",
-    "build:ssr": "npm run build:client-and-server-bundles && cpx ./server.ts ./dist",
-    "serve:ssr": "ts-node dist/server"
+    "build:ssr": "npm run build:client-and-server-bundles && npm run ngsw:version && cpx ./server.ts ./dist",
+    "serve:ssr": "ts-node dist/server",
+    "ngsw:version": "ngsw-config dist/browser src/ngsw-config.json"
   },
   "private": true,
   "dependencies": {
