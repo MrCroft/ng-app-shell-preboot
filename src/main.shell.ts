@@ -6,4 +6,4 @@ if (environment.production) {
   enableProdMode();
 }
 
-export { AppShellModule } from './app/app.shell.module';
+export { AppServerModule } from './app/app.shell.module';

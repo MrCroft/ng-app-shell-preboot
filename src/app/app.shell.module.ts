@@ -21,4 +21,4 @@ const routes: Routes = [ { path: 'shell', component: AppShellComponent }];
   bootstrap: [AppComponent],
   declarations: [AppShellComponent],
 })
-export class AppShellModule {}
+export class AppServerModule {}
