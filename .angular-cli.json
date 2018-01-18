@@ -8,6 +8,7 @@
       "root": "src",
       "outDir": "dist/browser",
       "assets": [
+        "manifest.json",
         "assets",
         "favicon.ico"
       ],
@@ -28,12 +29,17 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       },
-      "serviceWorker": true
+      "serviceWorker": true,
+      "appShell": {
+        "app": "2",
+        "route": "shell"
+      }
     },
     {
       "root": "src",
       "outDir": "dist/server",
       "assets": [
+        "manifest.json",
         "assets",
         "favicon.ico"
       ],
@@ -53,13 +59,14 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       },
-      "serviceWorker": true,
-      "platform": "server"
+      "platform": "server",
+      "name": "ssr"
     },
     {
       "root": "src",
       "outDir": "dist/shell",
       "assets": [
+        "manifest.json",
         "assets",
         "favicon.ico"
       ],
@@ -79,7 +86,6 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       },
-      "serviceWorker": true,
       "platform": "server",
       "name": "shell"
     }
