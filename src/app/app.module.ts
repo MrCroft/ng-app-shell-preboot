@@ -27,7 +27,10 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     PrebootModule.withConfig({ appRoot: 'app-root' }),
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('/ngsw-worker.js', {
+      // enabled: environment.production
+      enabled: false
+    }),
     BrowserAnimationsModule,
     CoreModule,
     SharedModule,
