@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "payload": {
+    "total": 1000,
+    "items": [
+      {
+        "id": 1,
+        "title": "Video 1",
+        "slug": "video-1",
+        "description": "description-for-video-1",
+        "poster": "video-1.jpg",
+        "file": "video-1.mp4"
+      },
+      {
+        "id": 2,
+        "title": "Video 2",
+        "slug": "video-2",
+        "description": "description-for-video-2",
+        "poster": "video-2.jpg",
+        "file": "video-2.mp4"
+      },
+      {
+        "id": 3,
+        "title": "Video 3",
+        "slug": "video-3",
+        "description": "description-for-video-3",
+        "poster": "video-3.jpg",
+        "file": "video-3.mp4"
+      },
+      {
+        "id": 4,
+        "title": "Video 4",
+        "slug": "video-4",
+        "description": "description-for-video-4",
+        "poster": "video-4.jpg",
+        "file": "video-4.mp4"
+      },
+      {
+        "id": 5,
+        "title": "Video 5",
+        "slug": "video-5",
+        "description": "description-for-video-5",
+        "poster": "video-5.jpg",
+        "file": "video-5.mp4"
+      }
+    ]
+  }
+}
