@@ -23,5 +23,17 @@
         "/assets/**"
       ]
     }
-  }]
+  }],
+  "dataGroups": [
+    {
+      "name": "api",
+      "urls": [ "/assets/server/**" ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 20,
+        "maxAge": "1h",
+        "timeout": "3s"
+      }
+    }
+  ]
 }
