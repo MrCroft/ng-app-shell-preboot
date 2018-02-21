@@ -75,5 +75,10 @@ app.get('*', (req, res) => {
 
 // Start up the Node server
 app.listen(PORT, () => {
-  console.log(`Node Express server listening on http://localhost:${PORT}`);
+  console.log('* ------------------------------------------------------------------------------ *');
+  console.log(`* > Node Express server listening on http://localhost:${PORT}                    *`);
+  console.log('* ------------------------------------------------------------------------------ *');
+  console.log('* If above port is not `8000`, change the api end point in `environment.prod.ts` *');
+  console.log('* to reflect the new port. Otherwise, api requests won\'t work on the server      *');
+  console.log('* ------------------------------------------------------------------------------ *');
 });
