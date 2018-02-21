@@ -3,20 +3,18 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
-import {
-  MatCommonModule,
-  MatInputModule,
-  MatButtonModule,
-  MatSidenavModule,
-  MatToolbarModule,
-  MatCardModule,
-  MatIconModule,
-  MatListModule,
-  MatTableModule,
-  MatExpansionModule,
-  MatMenuModule,
-  MatSnackBarModule
-} from '@angular/material';
+import { MatCommonModule } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   exports: [
