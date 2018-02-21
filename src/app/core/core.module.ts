@@ -1,19 +1,24 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppUpdateService } from './services/app-update.service';
 import { WindowService } from './services/window.service';
 import { SnackBarService } from './services/snack-bar.service';
+import { ApiService } from './services/api.service';
 
 @NgModule({
   imports: [
-    CommonModule
+    HttpClientModule
+  ],
+  exports: [
+    HttpClientModule
   ],
   declarations: [],
   providers: [
     AppUpdateService,
     WindowService,
-    SnackBarService
+    SnackBarService,
+    ApiService
   ]
 })
 export class CoreModule {}

@@ -2,8 +2,10 @@
   <h2>
     HOME Component
   </h2>
-
-  <!-- <button mat-raised-button color="primary">TEST BUTTON</button>
-  <button mat-raised-button color="accent">TEST BUTTON</button>
-  <button mat-raised-button color="warn">TEST BUTTON</button> -->
+  <p><strong>Videos:</strong></p>
+  <ul>
+    <li *ngFor="let video of (videos | async)?.payload.items">
+      {{ video.title }}
+    </li>
+  </ul>
 </div>
