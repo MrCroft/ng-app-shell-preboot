@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +31,7 @@ import { SharedModule } from './shared/shared.module';
       enabled: environment.production
     }),
     BrowserAnimationsModule,
+    BrowserTransferStateModule,
     CoreModule,
     SharedModule,
     AppRoutingModule,
