@@ -1,0 +1,11 @@
+<div style="text-align: center;">
+  <h2>
+    VIDEOS - Index Component
+  </h2>
+  <p><strong>Videos:</strong></p>
+  <ul>
+    <li *ngFor="let video of (videos | async)?.payload.items">
+      {{ video.title }}
+    </li>
+  </ul>
+</div>

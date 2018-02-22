@@ -8,6 +8,9 @@
       <a mat-list-item [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <mat-icon matListIcon>home</mat-icon> <span>Home</span>
       </a>
+      <a mat-list-item [routerLink]="['/videos']" routerLinkActive="active">
+        <mat-icon matListIcon>video_library</mat-icon> <span>Videos</span>
+      </a>
       <a mat-list-item [routerLink]="['/about']" routerLinkActive="active">
         <mat-icon matListIcon>description</mat-icon> <span>About</span>
       </a>
@@ -27,6 +30,7 @@
         </div>
 
         <div class="right-nav">
+          <a [routerLink]="['/videos']" mat-button>Videos</a>
           <a [routerLink]="['/about']" mat-button>About</a>
           <a [routerLink]="['/page-not-found']" mat-button>404</a>
         </div>

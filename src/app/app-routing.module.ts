@@ -16,6 +16,7 @@ import { AppShellComponent } from './app-shell/app-shell.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'videos', loadChildren: './videos/videos.module#VideosModule' },
   /**
    * TODO:
    * remove AppShellComponent and `shell` route
