@@ -4,18 +4,31 @@
   </h2>
 
   <div class="go-to">
-    SCENARIO A:<br />
-    1. Refresh to load the AppShell from the ServiceWorker<br />
-    2. Press the menu button<br />
-    3. The preboot overlay is also triggered
+    SCENARIO A:
+    <ul style="list-style-type: decimal;">
+      <li>Refresh to load the AppShell from the ServiceWorker</li>
+      <li>Refresh one more time</li>
+      <li>Press the menu button <small style="display: block;">(if you don't see it, make sure you're viewport is resized to have less than 1024px width)</small></li>
+      <li>
+        The preboot overlay is also triggered, making it impossible to tap on anything else
+        until it disappears
+      </li>
+    </ul>
   </div>
 
   <hr>
 
   <div class="go-to">
     SCENARIO B:<br />
-    1. Go to <a [routerLink]="['/videos']" mat-raised-button color="primary">/videos</a><br />
-    2. Hit refresh<br />
-    3. Notice the App is removed from the DOM
+    <ul style="list-style-type: decimal;">
+      <li>Go to <a [routerLink]="['/videos']" mat-raised-button color="primary">/videos</a></li>
+      <li>Hit refresh</li>
+      <li>
+        Notice the App is removed from the DOM
+        <br />
+        If it doesn't happen with the first refresh, try again. Sometimes it's working as expected,
+        but most times (9/10) you should get an empty DOM
+      </li>
+    </ul>
   </div>
 </div>
