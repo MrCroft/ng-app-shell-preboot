@@ -22,3 +22,10 @@ const routes: Routes = [ { path: 'shell', component: AppShellComponent }];
   declarations: [AppShellComponent],
 })
 export class AppServerModule {}
+/**
+ * TODO:
+ * Rename class to `AppShellModule` after https://github.com/angular/angular-cli/issues/9048 will be solved
+ * Other files affected by this:
+ * - tsconfig.shell.json
+ * - main.shell.ts
+ */
